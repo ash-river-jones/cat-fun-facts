@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Fun Facts</title>
+    <link rel="stylesheet" href="./Styles/index.css" />
+</head>
+
+<body class="site">
+    <header class="site__header">
+        <nav class="site__nav">
+            <a href="./index.html" class="site__heading-link"><h1 class="site__heading" id="logo">Cat Fun Facts</h1></a>
+        </nav>
+    </header>
+    <!-- photo galler -->
+    <main>
+        <section id="gallery" class="gallery">
+            <div class="gallery__container">
+                <div class="card">
+                </div>
+            </div>
+        </section>
+        <!-- form  -->
+        <section id="form" class="form">
+            <form class="form__wrapper" action="">
+                <label class="form__label" for="searchBar"></label>
+                <input class="form__fact-input" name="searchBar" id="searchBar" placeholder="Search Google Here"></input>
+                <button class="form__submit" type="submit">Submit your cat</button>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
