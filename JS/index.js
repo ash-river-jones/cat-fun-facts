@@ -2,28 +2,6 @@ console.log("Checking out under the hood?");
 console.log("Hiring? Get in touch with me!")
 console.log("www.linkedin.com/in/ash-river-jones/")
 
-//Submit form
-/* const form = document.querySelector(".form__wrapper");
-const catCommentInput = document.querySelector(".form__fact-input");
-const formSubmit = function () {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    if (event.target.catComment.value && event.target.catPhoto.value) {
-      catCommentInput.classList.remove("form--error");
-      photoDisplay(event.target.catPhoto.value);
-      factDisplay(event.target.catComment.value);
-    } else {
-      if (!event.target.catComment.value)
-        catCommentInput.classList.add("form--error");
-      if (!event.target.catPhoto.value) {
-        alert("Please submit the image");
-      }
-    }
-  });
-};
-formSubmit();
- */
-
 //Get data
 
 const getPhotoData = function () {
@@ -74,3 +52,11 @@ function factDisplay(fact) {
   div.appendChild(catFact);
   // }
 }
+
+const searchInput = document.querySelector("#searchInput");
+const searchButton = document.querySelector("#searchButton");
+
+  searchButton.addEventListener("click", function() {
+    const searchTerm = searchInput.value;
+    window.open(`https://www.google.com/search?q=${searchTerm}`);
+  });
